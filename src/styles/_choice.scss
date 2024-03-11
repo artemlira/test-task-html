@@ -2,6 +2,10 @@
   padding-top: 68px;
   overflow-x: hidden;
   min-height: 380px;
+  @media screen and (max-width: 1070px) {
+    overflow-x: unset;
+    padding-block: 68px;
+  }
 
   // .choice__container
   &__container {
@@ -33,6 +37,11 @@
   left: 0;
   right: -140px;
   justify-content: space-between;
+  @media screen and (max-width: 1070px) {
+    position: relative;
+    right: 0;
+    flex-wrap: wrap;
+  }
 }
 
 .choice__balls__item {
@@ -44,7 +53,9 @@
   // .item__img
   &__img {
     width: 100px;
-    // height: 100px;
+    @media screen and (max-width: 500px) {
+      width: 70px;
+    }
   }
   // .item__content
   &__content {
