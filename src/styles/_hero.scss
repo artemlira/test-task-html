@@ -1,0 +1,58 @@
+.hero {
+  background: url('/stadium.webp') center center / cover no-repeat;
+  padding-block: 140px 160px;
+  @media screen and (max-width: 750px) {
+    padding-block: 50px 70px;
+  }
+  // .hero__body
+  &__body {
+    display: flex;
+    gap: 10px 20px;
+    justify-content: space-between;
+  }
+  // .hero__content
+  &__content {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+  // .hero__title
+  &__title {
+    font-size: 64px;
+    @media screen and (max-width: 760px) {
+      font-size: 44px;
+    }
+  }
+  // .hero__text
+  &__text {
+    font-size: 40px;
+    @media screen and (max-width: 760px) {
+      font-size: 20px;
+    }
+  }
+  // .hero__btn
+  &__btn {
+    button {
+      min-width: 280px;
+      font-size: 24px;
+      background: #ffec43;
+      padding: 16px 45px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background: #d3c336;
+      }
+      @media screen and (max-width: 750px) {
+        font-size: 16px;
+        min-width: initial;
+      }
+    }
+  }
+  // .hero__img
+  &__img {
+    flex: 0 1 500px;
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+  }
+}
